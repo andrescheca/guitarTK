@@ -1,0 +1,51 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Escalas</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/spinBox.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/paper/paper.js"></script>
+<script type="text/javascript" src="js/numberSteps.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<form>
+		<div>
+			Number of frets: 
+			<input 
+				name="fretsNumber" 
+				type="text" 
+				id="fretsNumber" 
+				class="numberSteps" min="12" max="30" steps="1"
+				value="24"/>
+			<!-- 
+			<select name="fretsNumber" id="fretsNumber">
+				<option value="24">24</option>
+				<option value="22">22</option>
+				<option value="21">21</option>
+				<option value="12">12</option>
+			</select>
+			-->
+		</div>
+		<div>
+			Scale: 
+			<select name="scaleType" id="scaleType">
+				<option value="ionian">Ionian</option>
+				<option value="dorian">Dorian</option>
+				<option value="lydian">Lydian</option>
+				<option value="mixolydian">Mixolydian</option>
+				<option value="ionan2">Ionian2</option>
+			</select>
+		</div>
+		<input type="button" value="View" onclick="send();"/>
+	</form>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

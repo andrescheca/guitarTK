@@ -1,0 +1,40 @@
+.numberSteps{
+	width: 22px;
+}
+.dateTimeControl{
+	width: 40px;
+}
+.spinBoxDiv{
+	display:inline-block;
+	margin-right: 20px;
+}
+#spinBoxUp{
+	width: 20px;
+	height: 11px;
+	position: absolute;
+	padding: 1px 1px 0px 0px;
+	margin: -17px 0px 0px 0px;
+	cursor: pointer;
+	background-image: url(../images/default/nav-arrow-top.png);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+}
+#spinBoxDown{
+	width: 20px;
+	height: 11px;
+	position: absolute;
+	padding: 1px 1px 0px 0px;
+	margin: -5px 0px 0px 0px;
+	cursor: pointer;
+	background-image: url(../images/default/nav-arrow-down.png);
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+}
+#spinBoxUp[disabled]{
+	cursor: default;
+	background-image: none;
+}
+#spinBoxDown[disabled]{
+	cursor: default;
+	background-image: none;
+}
