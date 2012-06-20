@@ -19,7 +19,7 @@
 	<form>
 		<div>
 			Number of frets: 
-			<input 
+			<input onchange="send();"
 				name="fretsNumber" 
 				type="text" 
 				id="fretsNumber" 
@@ -36,7 +36,7 @@
 		</div>
 		<div>
 			Scale: 
-			<select name="scaleType" id="scaleType">
+			<select name="scaleType" id="scaleType" onchange="send();">
 				<option value="ionian">Ionian</option>
 				<option value="dorian">Dorian</option>
 				<option value="lydian">Lydian</option>
